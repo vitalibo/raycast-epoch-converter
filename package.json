@@ -15,16 +15,27 @@
   "license": "MIT",
   "commands": [
     {
-      "name": "epochseconds",
-      "title": "Get epoch seconds",
-      "description": "Copy current Unix timestamp in seconds to clipboard",
-      "mode": "no-view"
-    },
-    {
-      "name": "epochmillis",
-      "title": "Get epoch milliseconds",
-      "description": "Copy current Unix timestamp in milliseconds to clipboard",
-      "mode": "no-view"
+      "name": "timestamp",
+      "title": "Get Current Timestamp",
+      "description": "Copy current Unix timestamp to clipboard",
+      "mode": "no-view",
+      "arguments": [
+        {
+          "name": "unit",
+          "type": "dropdown",
+          "placeholder": "Unit",
+          "data": [
+            {
+              "title": "Seconds",
+              "value": "1000"
+            },
+            {
+              "title": "Milliseconds",
+              "value": "1"
+            }
+          ]
+        }
+      ]
     }
   ],
   "dependencies": {
