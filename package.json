@@ -50,6 +50,20 @@
           "required": true
         }
       ]
+    },
+    {
+      "name": "convert-datetime",
+      "title": "Convert Datetime String",
+      "description": "Convert a human-readable datetime string to Unix timestamp",
+      "mode": "no-view",
+      "arguments": [
+        {
+          "name": "datetime",
+          "type": "text",
+          "placeholder": "2026-01-23T12:34:56.789Z",
+          "required": true
+        }
+      ]
     }
   ],
   "dependencies": {
