@@ -36,6 +36,20 @@
           ]
         }
       ]
+    },
+    {
+      "name": "convert-timestamp",
+      "title": "Convert Unix Timestamp",
+      "description": "Convert a Unix timestamp to a human-readable datetime string",
+      "mode": "no-view",
+      "arguments": [
+        {
+          "name": "timestamp",
+          "type": "text",
+          "placeholder": "1234567890123",
+          "required": true
+        }
+      ]
     }
   ],
   "dependencies": {
