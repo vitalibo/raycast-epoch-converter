@@ -12,8 +12,8 @@ export default async (props: { arguments: Arguments }) => {
     return null;
   }
 
-  const timestamp = Date.now();
-  Clipboard.copy(timestamp.toString());
+  const timestamp = date.getTime();
+  Clipboard.copy(timestamp);
   await showHUD("Copied to clipboard");
   await popToRoot();
 };
