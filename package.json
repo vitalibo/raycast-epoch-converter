@@ -3,7 +3,7 @@
   "name": "epoch-converter",
   "title": "Epoch Converter",
   "description": "Get current epoch timestamps and convert between Unix timestamps and human-readable datetime strings.",
-  "icon": "extension-icon.png",
+  "icon": "command-icon.svg",
   "author": "vitalibo",
   "platforms": [
     "macOS",
