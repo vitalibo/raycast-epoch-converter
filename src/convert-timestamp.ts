@@ -1,10 +1,10 @@
 import { Clipboard, popToRoot, showHUD } from "@raycast/api";
 
-interface Args {
+interface Arguments {
   timestamp: string;
 }
 
-export default async (props: { arguments: Args }) => {
+export default async (props: { arguments: Arguments }) => {
   const { timestamp } = props.arguments;
 
   const parsed = parseInt(timestamp);

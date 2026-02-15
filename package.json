@@ -22,7 +22,7 @@
     },
     {
       "name": "convert-timestamp",
-      "title": "Convert Timestamp to Datetime",
+      "title": "Convert Timestamp to Date",
       "description": "Convert a Unix timestamp to an ISO 8601 datetime format",
       "mode": "no-view",
       "arguments": [
@@ -36,14 +36,14 @@
     },
     {
       "name": "convert-datetime",
-      "title": "Convert Datetime to Timestamp",
-      "description": "Convert an ISO 8601 datetime to Unix timestamp milliseconds",
+      "title": "Convert Date to Timestamp",
+      "description": "Convert an ISO 8601 datetime format to Unix timestamp milliseconds",
       "mode": "no-view",
       "arguments": [
         {
           "name": "datetime",
           "type": "text",
-          "placeholder": "2026-01-23T12:34:56.789Z",
+          "placeholder": "2026-01-23 12:34:56",
           "required": true
         }
       ]
