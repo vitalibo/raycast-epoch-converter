@@ -1,12 +1,7 @@
 import { Clipboard, popToRoot, showHUD } from "@raycast/api";
 
-interface Args {
-  unit: number;
-}
-
-export default async function main(props: { arguments: Args }) {
-  const { unit } = props.arguments;
-  const timestamp = Math.floor(Date.now() / (unit || 1));
+export default async function main() {
+  const timestamp = Date.now();
   Clipboard.copy(timestamp.toString());
   await showHUD("Copied to clipboard");
   await popToRoot();
